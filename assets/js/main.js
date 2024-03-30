@@ -184,6 +184,11 @@ var mainSlider = new Swiper('.slider-gallery__slider', {
     slidesPerView: 1,
     spaceBetween: 30,
     slidesPerGroup: 1,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -195,14 +200,14 @@ var mainSlider = new Swiper('.slider-gallery__slider', {
             spaceBetween: 20,
         },
         1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
+            slidesPerView: 5,
+            spaceBetween: 20,
         },
     }
 });
-
+mainSlider.autoplay.start();
 // Слайдер экскурсий
-var tripsSlider = new Swiper('.trips__container', {
+var tripsSlider = new Swiper('.trips__slider', {
     slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 30,
@@ -230,7 +235,6 @@ var tripsSlider = new Swiper('.trips__container', {
 var tab1Slier = new Swiper('.services__slider', {
     slidesPerView: 1,
     slidesPerGroup: 1,
-    loop: true,
     pagination: {
         el: '.services__slider-pagination',
         clickable: true,
