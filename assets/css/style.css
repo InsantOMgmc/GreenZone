@@ -1096,7 +1096,7 @@ h3 {
 	}
 
 	.basic__entry {
-		max-width: 100%;
+		max-width: 100% !important;
 	}
 
 	.basic__wrapper {
